@@ -1,16 +1,29 @@
-# React + Vite
+# Angel Serrano — Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio of Angel Alexis Serrano Hernández, Computer Engineering student at CUAltos (Universidad de Guadalajara), focused on Frontend Web Development. Currently seeking a professional internship as a Frontend / Web Developer.
 
-Currently, two official plugins are available:
+🔗 **Live demo:** [your-deployed-link-here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Projects
 
-## React Compiler
+- **Regionika** — Modernized the university platform with Astro, building a responsive, user-centered interface focused on faster loading times and performance.
+- **Rector's Annual Activities Report** — Official web platform for the Rector's Annual Report at CUAltos, built with React and Three.js, with interactive 3D elements and advanced UI components.
+- **Postgraduate Studies System** — Web platform to digitize and centralize postgraduate program management at CUAltos. Built in a 15-person team with React, Tailwind CSS, Node.js, Python and MongoDB.
+- **Studium** — Personal project currently in progress.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+React · Vite · JavaScript · Tailwind CSS · Three.js · GSAP
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Run Locally
+
+```bash
+npm install
+npm run dev
+
+```
+## Contact
+
+- **LinkedIn** - [Angel Alexis Serrano Hernández](https://www.linkedin.com/in/angel-alexis-serrano-hernandez-274a2829b/)
+- **GitHub** - [AngelSH004](https://github.com/AngelSH10004)
+- **Email** - angelseha004@gmail.com
