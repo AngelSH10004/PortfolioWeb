@@ -5,7 +5,7 @@ const containerVariants: Variants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.5, //default delay to childrens automatically
+      staggerChildren: 0.2, //default delay to childrens automatically
     },
   },
 };

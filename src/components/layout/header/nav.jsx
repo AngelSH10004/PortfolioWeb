@@ -1,11 +1,16 @@
-function Nav() {
+import { motion } from "framer-motion";
+
+function Nav({ textColor, borderColor }) {
   return (
-    <div className="pt-6 px-10 h-17.5 sticky top-0 z-50 backdrop-filter backdrop-blur-lg text-[#3F1E20]">
-      <nav className="flex justify-between items-center h-full border-b-2 border-[#332313] text-lg pb-3">
-        <div>ANGEL SH</div>
-        <div className="font-black">UX/UI FRONT-END DEVELOPER</div>
-      </nav>
-    </div>
+    <motion.div className="pt-4 sm:pt-6 px-4 sm:px-8 md:px-10 h-16 sm:h-17.5 sticky top-0 z-50 backdrop-filter backdrop-blur-lg">
+      <motion.nav
+        style={{ color: textColor, borderColor: borderColor }}
+        className="flex justify-between items-center h-full border-b-2 font-serif text-xs sm:text-base md:text-lg pb-3 gap-4"
+      >
+        <div className="shrink-0">ANGEL SH</div>
+        <div className="font-black text-right">UX/UI FRONT-END DEVELOPER</div>
+      </motion.nav>
+    </motion.div>
   );
 }
 

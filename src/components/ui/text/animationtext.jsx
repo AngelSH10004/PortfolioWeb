@@ -1,13 +1,17 @@
 import { motion } from "motion/react";
 
-export default function AnimationText({ text, color, className }) {
+export default function AnimationText({ text, color, className = "", link, svg }) {
   return (
-    <motion.p
-      className={`relative inline-block px-4 py-2 cursor-pointer font-boldselect-none ${className}`}
+    <motion.a
+      className={`relative inline-flex items-center gap-2 px-4 py-2 cursor-pointer font-bold select-none ${className}`}
       whileHover="hover"
       initial="rest"
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {text}
+      {svg}
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none"
         fill="none"
@@ -31,6 +35,6 @@ export default function AnimationText({ text, color, className }) {
           }}
         />
       </svg>
-    </motion.p>
+    </motion.a>
   );
 }

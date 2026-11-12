@@ -7,46 +7,47 @@ export default function AboutMe() {
   return (
     <ScrollReveal.Container>
       <section>
-        <div className="flex w-full justify-center items-center">
+        <div className="flex w-full justify-center items-center flex-wrap">
           <ScrollReveal>
             <Titles
               text={"OH, HEY I’M"}
-              classNameText={"text-white font-shoulders text-[96px] font-black"}
+              classNameText={
+                "text-white font-shoulders text-4xl sm:text-6xl md:text-8xl lg:text-[96px] font-black"
+              }
             />
           </ScrollReveal>
           <ScrollReveal>
             <Titles
               text={"ANGEL"}
               classNameText={
-                "text-transparent font-shoulders text-[96px] font-black ml-4"
+                "text-transparent font-shoulders text-4xl sm:text-6xl md:text-8xl lg:text-[96px] font-black ml-2 sm:ml-4 stroke-angel"
               }
-              style={{
-                WebkitTextStroke: "2px #ffffff",
-              }}
             />
           </ScrollReveal>
           <ScrollReveal>
             <Titles
               text={"!"}
-              classNameText={"text-white font-shoulders text-[96px] font-black"}
+              classNameText={
+                "text-white font-shoulders text-4xl sm:text-6xl md:text-8xl lg:text-[96px] font-black"
+              }
             />
           </ScrollReveal>
         </div>
-        <div className="flex items-center justify-center gap-10">
+        <div className="flex items-center justify-center gap-4 sm:gap-10">
           <ScrollReveal animation="springRight">
-            <div className="flex flex-col items-center gap-4">
+            <div className="hidden sm:flex flex-col items-center gap-4">
               <ScrollIcon
                 text={"SCROLL"}
                 classNameText={"text-[#C25D64] text-[15px]"}
                 classNameDiv={
-                  "h-[450px] w-0.5 bg-linear-to-b from-[#C25D64] to-transparent rounded-full"
+                  "h-64 sm:h-[450px] w-0.5 bg-linear-to-b from-[#C25D64] to-transparent rounded-full"
                 }
               />
             </div>
           </ScrollReveal>
-          <div className="mt-10">
+          <div className="mt-6 sm:mt-10 max-w-4xl">
             <ScrollReveal animation="clipReveal">
-              <p className="text-white text-[32px] text-center font-medium font-serif">
+              <p className="text-white text-base sm:text-xl md:text-2xl lg:text-[32px] text-center font-medium font-serif leading-relaxed">
                 Hello again! I’m glad you want to learn more about me. I'm Angel
                 Alexis Serrano Hernández, a Computer Engineer graduate from the
                 University of Guadalajara and a Frontend Developer.
@@ -63,12 +64,12 @@ export default function AboutMe() {
             </ScrollReveal>
           </div>
           <ScrollReveal animation="springRight">
-            <div className="flex flex-col items-center gap-4">
+            <div className="hidden sm:flex flex-col items-center gap-4">
               <ScrollIcon
                 text={"SCROLL"}
                 classNameText={"text-[#C25D64] text-[15px]"}
                 classNameDiv={
-                  "h-[450px] w-0.5 bg-linear-to-b from-[#C25D64] to-transparent rounded-full"
+                  "h-64 sm:h-[450px] w-0.5 bg-linear-to-b from-[#C25D64] to-transparent rounded-full"
                 }
               />
             </div>
