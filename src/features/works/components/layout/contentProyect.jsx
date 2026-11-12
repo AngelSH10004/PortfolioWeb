@@ -57,7 +57,6 @@ export default function ContentProyect({
             <StyleVectorial />
           </div>
 
-          {/* inner wrapper aligning with background max-w-7xl */}
           <div className="relative z-10 min-h-full w-full max-w-7xl mx-auto flex flex-col justify-between p-6 sm:p-10 md:p-12 lg:p-14 gap-8">
             {/* header */}
             <header className="flex items-center justify-between w-full">
@@ -83,8 +82,9 @@ export default function ContentProyect({
                 {mainImage ? (
                   <div className="w-full overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-black/20">
                     <img
-                      loading="lazy"
+                      loading="eager"
                       decoding="async"
+                      fetchpriority="high"
                       src={mainImage}
                       alt={title || "Imagen del proyecto"}
                       className="w-full h-64 sm:h-80 md:h-90 lg:h-105 object-cover object-center transition-transform duration-500 hover:scale-[1.02]"

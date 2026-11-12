@@ -61,9 +61,25 @@ const works = [
   },
 ];
 
+// Preload all work images
+function usePreloadImages(images) {
+  useEffect(() => {
+    images.forEach((src) => {
+      if (!src) return;
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+}
+
 export default function WorksList() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectProject, setSelectProject] = useState(0);
+  usePreloadImages([
+    ...works.map((w) => w.image),
+    ...works.map((w) => w.mainImage),
+  ]);
+
   return (
     <>
       <ScrollReveal.Container>
