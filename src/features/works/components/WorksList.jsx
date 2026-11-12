@@ -10,9 +10,9 @@ import CursorImage from "../../../components/ui/hover/CursorImage";
 import ContentProyect from "../components/layout/contentProyect";
 
 /* Image imports */
-import family from "../../../assets/images/family.jpg";
-import lion from "../../../assets/images/lion.jpg";
-import posgrado from "../../../assets/images/posgrado.jpg";
+import family from "../../../assets/images/family.webp";
+import lion from "../../../assets/images/lion.webp";
+import posgrado from "../../../assets/images/posgrado.webp";
 import error404 from "../../../assets/svg/404error.svg";
 
 /* Images imports */

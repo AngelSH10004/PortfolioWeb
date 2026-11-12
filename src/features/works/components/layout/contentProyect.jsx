@@ -83,6 +83,7 @@ export default function ContentProyect({
                 {mainImage ? (
                   <div className="w-full overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-black/20">
                     <img
+                      loading="lazy"
                       decoding="async"
                       src={mainImage}
                       alt={title || "Imagen del proyecto"}
